@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laura Nicoletta Ziino - Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+	<div class="hero-content">
+		<h1>Laura Nicoletta Ziino</h1>
+		<p>Studente Full Stack — corso Epicode 2026</p>
+	</div>
+	<nav>
+		<a href="#chi-sono">Chi sono</a>
+		<a href="#competenze">Competenze</a>
+		<a href="#esperienze">Esperienze</a>
+		<a href="#progetti">Progetti</a>
+		<a href="#contattami">Contattami</a>
+	</nav>
+</header>
+
+<main>
+	<section id="chi-sono">
+		<h2><span></span> Chi sono</h2>
+		<div class="about-content">
+			<img class="profile-photo" src="foto%20profilo.jpg" alt="Foto profilo di Laura Nicoletta Ziino">
+			<div class="about-text">
+				<p>Mi chiamo Laura Nicoletta Ziino e sto imparando a programmare. Studio sviluppo web con Epicode e ogni giorno aggiungo qualcosa a questa pagina.</p>
+				<p>Vivo a Bassano del Grappa. Ho una formazione precedente in architettura e ora sto cambiando settore. Cerco un primo ruolo come sviluppatore.</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="competenze">
+		<h2><span></span> Competenze</h2>
+		<p class="section-desc">Le tecnologie che sto usando in questo periodo nel corso:</p>
+		<div class="skills-list">
+			<div class="skill-item">HTML</div>
+			<div class="skill-item">CSS</div>
+			<div class="skill-item">Git e GitHub</div>
+			<div class="skill-item">Visual Studio Code</div>
+		</div>
+	</section>
+
+	<section id="esperienze">
+		<h2><span></span> Esperienze</h2>
+		<p class="section-desc">Un riepilogo del mio percorso formativo e lavorativo recente.</p>
+		<table>
+			<caption>Tabella del percorso formativo e professionale recente</caption>
+			<thead>
+				<tr>
+					<th>Anno</th>
+					<th>Ruolo</th>
+					<th>Azienda / Scuola</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>2026</td>
+					<td>Studente Full Stack epicode</td>
+					<td>Epicode</td>
+				</tr>
+				<tr>
+					<td>2024 - 2025</td>
+					<td>addetta alle vendite</td>
+					<td>broker senza sorprese, assicuratore facile, Bassano del Grappa</td>
+				</tr>
+				<tr>
+					<td>2018 - 2022</td>
+					<td>Studente di architettura</td>
+					<td>liceo artistico de Fabris</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+
+	<section id="progetti">
+		<h2><span></span> Progetti</h2>
+		<p class="section-desc">I lavori fatti durante le prime settimane di corso.</p>
+
+		<div class="project-card">
+			<div class="project-header">
+				<span class="project-title">Pagina ricetta</span>
+				<span class="badge-new">NEW</span>
+			</div>
+			<p class="project-desc">Una pagina con foto, ingredienti e procedimenti. Esercizio di markup semantico applicato a un contenuto reale.</p>
+			<a href="#" class="project-link">Vedi su GitHub</a>
+		</div>
+
+		<div class="project-card">
+			<div class="project-header">
+				<span class="project-title">Card di presentazione</span>
+			</div>
+			<p class="project-desc">Un biglietto digitale con nome, ruolo e link social.</p>
+			<a href="#" class="project-link">Vedi su GitHub</a>
+		</div>
+	</section>
+
+	<section id="contattami">
+		<h2><span></span> Contattami</h2>
+		<p class="section-desc">Compila il form per scrivermi. Ti rispondo entro 24 ore.</p>
+
+		<form>
+			<div class="form-group">
+				<label for="nome">Nome *</label>
+				<input type="text" id="nome" placeholder="Il tuo nome" required>
+			</div>
+
+			<div class="form-group">
+				<label for="email">Email *</label>
+				<input type="email" id="email" placeholder="la.tua@email.it" required>
+			</div>
+
+			<div class="form-group">
+				<label for="motivo">Motivo del contatto</label>
+				<select id="motivo">
+					<option value="" disabled selected>Seleziona un'opzione</option>
+					<option value="lavoro">Proposta di lavoro</option>
+					<option value="collaborazione">Collaborazione</option>
+					<option value="altro">Altro</option>
+				</select>
+			</div>
+
+			<div class="form-group">
+				<label for="data">Data preferita per la risposta</label>
+				<input type="date" id="data" value="2026-06-06">
+			</div>
+
+			<div class="form-group">
+				<label for="messaggio">Messaggio</label>
+				<textarea id="messaggio" placeholder="Scrivi qui il tuo messaggio..."></textarea>
+			</div>
+
+			<div class="form-group checkbox-group">
+				<input type="checkbox" id="privacy" required>
+				<label for="privacy">Accetto di essere ricontattato all'indirizzo indicato *</label>
+			</div>
+
+			<button type="submit">Invia</button>
+		</form>
+	</section>
+</main>
+
+<footer>
+	<p>© 2026 Laura Nicoletta Ziino</p>
+</footer>
+
+</body>
+</html>
